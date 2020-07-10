@@ -1,0 +1,28 @@
+{
+  "name": "biomollab",
+  "version": "0.0.1",
+  "description": "Molecular Biology Educational Game",
+  "main": "app.js",
+  "scripts": {
+    "test": "standard && node tests.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marceloqla/BioMolLab.git"
+  },
+  "keywords": [
+    "Molecular",
+    "Biology",
+    "Education",
+    "Game"
+  ],
+  "author": "marceloqla",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/marceloqla/BioMolLab/issues"
+  },
+  "homepage": "https://github.com/marceloqla/BioMolLab#readme",
+  "devDependencies": {
+    "standard": "^14.3.4"
+  }
+}
