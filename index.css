@@ -1,0 +1,237 @@
+/* .cursor_search {
+    cursor: url('search.png'), auto;
+}
+.cursor_pipette {
+    cursor: url('pipette.png'), auto;
+} */
+/* The sidebar menu */
+.left {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 20%; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #afafaf; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+#tooltip {
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 2; /* Stay on top */
+    font-size: medium;
+    background-color: white;
+    padding: 15px;
+    border-color: black;
+    border-width: thin;
+    border-style: solid;
+}
+#pipettingtooltip {
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 6; /* Stay on top */
+    font-size: medium;
+    background-color: white;
+    padding: 15px;
+    border-color: black;
+    border-width: thin;
+    border-style: solid;
+    border-radius: 5px;
+}
+.maindialog {
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    margin-left: 20%; /* Same as the width of the sidebar */
+    width: 75%;
+    height: 95%;
+    z-index: 4; /* Stay on top */
+    font-size: medium;
+    /* background-color: white; */
+    background-color: rgba(255, 255, 255, 0.5);
+    /* opacity: 0.7; */
+    border-color: black;
+    border-width: medium;
+    border-style: solid;
+}
+#sangerresults {
+    align-items: center;
+    justify-content: center;
+}
+.centerSanguer {
+    background-color: #e6e1e1 !important;
+    height: 90%;
+    width: 90%;
+    border-color: black;
+    border-width: thick;
+    border-style: solid;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+#pipettingdiv {
+    align-items: center;
+    justify-content: center;
+}
+.centerPipette {
+    background-color: #e6e1e1 !important;
+    height: 70%;
+    width: 70%;
+    border-color: black;
+    border-width: thick;
+    border-style: solid;
+    border-radius: 5px;
+    /* opacity:1.0; */
+    display: flex;
+    flex-wrap: wrap;
+}
+.center_li {
+    height: 90%;
+    text-align: center;
+    flex: 1;
+}
+.center_li2 {
+    border-bottom: solid;
+    height: 90%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(#000, #000) no-repeat center/2px 100%;
+}
+.pipette_btnimg {
+    background: aliceblue;
+    border-style: solid;
+}
+.left_li {
+    height: 90%;
+    /* width: 49%; */
+    /* float: left; */
+    border-bottom-color: black;
+    border-bottom-width: medium;
+    border-bottom-style: solid;
+    flex: 5;
+}
+.right_li {
+    height: 90%;
+    /* width: 50%; */
+    /* float: left; */
+    border-bottom-color: black;
+    border-bottom-width: medium;
+    border-bottom-style: solid;
+    /* margin-left: 50%; */
+    flex: 5;
+}
+.bottom_li {
+    border-top-color: black;
+    border-top-width: medium;
+    border-top-style: solid;
+    height: 10%;
+    text-align: center;
+    flex-basis: 100%;
+}
+.d3div {
+    height: 80%;
+    text-align: center;
+    flex-basis: 100%;
+}
+#d3svg {
+    background-color: white;
+}
+.sanger_row {
+    height: 10%;
+    text-align: center;
+    flex: 1;
+    flex-basis: 100%;
+}
+.bottom_padding {
+    padding-top: 56%;
+}
+.eppendorf_el {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+.eppendorf_img {
+    padding-left: 5%;
+}
+.main {
+    margin-left: 20%; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+    height: 100%;
+    z-index: 1; /* Stay on top */
+    position: fixed;
+    width: 80%;
+}
+#canvasthree {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.advisor {
+    margin-left: 6px;
+    max-width: 90%;
+    max-height: 100%;
+    border-style: solid;
+    border-radius: 20px;
+    border-width: thick;
+    background: antiquewhite;
+}
+
+/* https://leaverou.github.io/bubbly/ */
+.speech-bubble {
+    margin-left: 258px; /* Same as the width of the sidebar */
+    margin-top: 20px; /* Same as the width of the sidebar */
+	position: fixed;
+	background: #1b1a1a;
+    border-radius: .4em;
+    width: 450px;
+    padding: 60px 20px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 200%;
+    text-shadow: 0 -0.05em 0.1em rgba(0,0,0,.3);
+    z-index: 2; /* Stay on top */
+}
+
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 42px solid transparent;
+	border-right-color: #1b1a1a;
+	border-left: 0;
+	border-top: 0;
+	margin-top: -21px;
+	margin-left: -42px;
+}
+
+/*Button
+-----------------*/
+button {
+    text-decoration: none;
+    outline:0; 
+    font-size:1em;
+    font-weight:600;
+    background:#fff;
+    border:none;
+    padding: 8px 24px;
+    transition:all .3s ease-out; 
+    box-shadow:inset 0 -4px 0 0 rgba(107, 107, 107, 0.2),
+      1px 1px 0 0 #505050,
+      2px 2px 0 0 #505050,
+      3px 3px 0 0 #505050,
+      4px 4px 0 0 #505050,
+      5px 5px 0 0 #505050,
+      6px 6px 0 0 #505050;
+}
+button:hover{
+    color:#444;
+}
+button:active{
+    color:#222;
+    box-shadow:inset 0 -4px 0 0 rgba(0,0,0,.2),
+      1px 1px 0 0 #505050,
+      2px 2px 0 0 #505050,
+      3px 3px 0 0 #505050;
+}

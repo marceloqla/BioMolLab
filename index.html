@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Laboratório de BioMol, o jogo</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+  <div id="tooltip" style="display: none;"></div>
+  <div id="pipettingtooltip" style="display: none;"></div>
+  <div id="pipettingdiv" class="maindialog" style="display: none;"></div>
+  <div id="sangerresults" class="maindialog" style="display: none;"></div>
+  <div id="questions" class="maindialog" style="display: none;"></div>
+    
+  </div>
+  <div class="left">
+    <!-- https://charactercreator.org/#sex=m&skinColor=%23eeceb3&irisColor=%23da9393&hairColor=%23803300&pupils=round&shirt=colar&pants=jeans&shoes=loafers&socks=socks&glasses=hipster&pupilsColor=%23ad7878&iris=default&body_head=oval&emotion=neutral&mouthColor=%23e9cbb2&hair=balding_crown&facialhair=moustache_thick -->
+    <div>
+      <img class="advisor" src="imgs/advisor_feliz1.svg" alt="Orientador">
+    </div>
+    <!-- <a href="https://br.freepik.com/fotos-vetores-gratis/fundo">Fundo foto criado por freepik - br.freepik.com</a> -->
+    <!-- <div>Icons made by <a href="https://creativemarket.com/eucalyp" title="Eucalyp">Eucalyp</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
+  </div>
+  <hgroup id="dialogbox" class="speech-bubble">
+    <h3 id="dialogo" value=-1>Bem vindo ao laboratório virtual de Biologia Molecular!</h3>
+    <button id="nextbtn">&#8250;</button>
+  </hgroup>
+  <div id="main" class="main">
+    <canvas id="canvasthree"></canvas>
+  </div>
+  <script src="//d3js.org/d3.v4.min.js"></script>
+  <script type="module" src="js/index.js"></script>
+</body>
+</html>
