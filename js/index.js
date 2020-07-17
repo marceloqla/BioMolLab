@@ -1,8 +1,8 @@
 //icons by Eucalyp at flaticon
 
 /* Imports */
-// import * as THREE from '/node_modules/three/src/Three.js';
-import * as THREE from '/js/three.js';
+import * as THREE from '/node_modules/three/src/Three.js';
+// import * as THREE from '/js/three.js';
 import { GLTFLoader } from '/js/GLTFLoader.js';
 import { OrbitControls } from '/js/OrbitControls.js';
 
