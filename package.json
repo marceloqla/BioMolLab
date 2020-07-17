@@ -23,12 +23,10 @@
   },
   "homepage": "https://github.com/marceloqla/BioMolLab#readme",
   "devDependencies": {
-    "enable3d": "^0.19.1",
-    "phaser": "^3.23.0",
     "standard": "^14.3.4"
   },
   "dependencies": {
-    "enable3d": "^0.19.1",
-    "phaser": "^3.23.0"
+    "express": "^4.17.1",
+    "three": "^0.118.3"
   }
 }
