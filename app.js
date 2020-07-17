@@ -1,14 +1,10 @@
-const http = require('http')
+// Parameters
+const port = 3000; //Specify a port for our web server
+const express = require('express'); //load express with the use of requireJs
 
-const hostname = '127.0.0.1'
-const port = 3000
+const app = express(); //Create an instance of the express library
 
-const server = http.createServer((req, res) => {
-  res.statusCode = 200
-  res.setHeader('Content-Type', 'text/plain')
-  res.end('Hello World')
-})
-
-server.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`)
-})
+app.use(express.static(__dirname + '/'));//Serving static files
+app.listen(port, function() { //Listener for specified port
+    console.log("Server running at: http://localhost:" + port)
+});
